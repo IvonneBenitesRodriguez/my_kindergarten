@@ -19,6 +19,7 @@
 
 ###  My Kindergarten WebApp <a name="about-project"></a>
 *My kindergarten webapp* repository is built using programming language named JavaScript but specifically in this case I used a framework named **React**. 
+For the styles I used styled-components so I had to install it.
 I choose this framework since I want to put in practice a main principle named **separation of concerns**, therefore I created a folder named **components** where I placed each one of my components which are going to be used in my main file named App.js.<br/>
 
 ## Deployment link <a name="deployment-link"></a>
