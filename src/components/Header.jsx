@@ -64,7 +64,7 @@ function Header() {
           variant="warning"
           type="button"
           size="sm"
-          className="btn_register align-items-center fs-5 rounded fw-bold"
+          className="btn-register align-items-center fs-5 rounded fw-bold"
         >
           Register your child
         </Button>
