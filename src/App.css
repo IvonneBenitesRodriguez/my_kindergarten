@@ -1,38 +1,63 @@
-.App {
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  margin: 0px;
+}
+/*carousel*/
+.custom-carousel{
+  max-height: 100%;
+  overflow: hidden;
+}
+.custom-carousel .carousel-item {
+  height: 100%;
+}
+.custom-carousel .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+/*styles for the text overlay*/
+.carousel-item {
+  position: absolute;
+  bottom: 20px;
+  transform: translate(-50%);
   text-align: center;
+  color: black;
+  z-index: 10;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.animated-text {
+  opacity: 0;
+  transform: translateY(80px);
+  animation: slideUp 0.5s forwards ease-out;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.carousel-caption {
+  left: 52%;
+  bottom: 34.25rem;
+  top: 15rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h3.animated-text {
   color: white;
+  font-size: 65px;
 }
-
-.App-link {
-  color: #61dafb;
+h3.title-one {
+  color: #f70776;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h3.title-second {
+  color: #0962ea;
+}
+h3.title-three {
+  color: #392f2f;
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
+    transform: translateY(-20px);
   }
 }
